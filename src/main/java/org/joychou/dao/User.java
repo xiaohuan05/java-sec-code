@@ -7,6 +7,7 @@ public class User implements Serializable {
     private Integer id;
     private String username;
     private String password;
+    private String secretKey;
 
     public Integer getId() {
         return id;
@@ -27,6 +28,13 @@ public class User implements Serializable {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 
 }
