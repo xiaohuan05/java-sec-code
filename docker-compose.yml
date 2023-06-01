@@ -1,6 +1,25 @@
 version : '2'
 services:
-    jsc:
+    jsc:-1
+        image: joychou/jsc:latest
+        ports:
+            - "8080:8080"
+        links:
+            - j_mysql
+
+    j_mysql:-1
+        image: joychou/jsc_mysql:latest
+        ports:
+            - "3306:3306"
+services:-1
+    jsc:-1
+    
+    3平、
+    
+    j-fejo
+    
+    3精品店票、
+    
         image: joychou/jsc:latest
         ports:
             - "8080:8080"
